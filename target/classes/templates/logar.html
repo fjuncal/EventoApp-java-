@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html  xmlsn:th = "http://thymeleaf.org"
+	  xmlns:layout = "http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Entre com o usuário</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	      <!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	
+	      <!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="style/styleCss.css"/>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Entre Com o Usuário Cadastrado</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+</header>		
+
+				<th:block th:include = "mensagemValidacao"></th:block>
+				<div class="container formCadastro">
+					<form method="post" action="logarUsu">
+						<p>Email: <input type="text" name="email" placeholder="e-mail"/></p>
+						<p>Senha: <input type="password" name="senha" placeholder="senha"/></p>
+						<button class="btn waves-effect waves-light" type="submit" name="action">Entrar
+		    <i class="material-icons right">account_box</i></button>
+					
+					</form>
+				</div>
+			
+			<div class="container">
+			<form method="post" action="alterarSenha">
+			<button class="btn waves-effect waves-light" type="submit" name="action">Alterar Senha
+    <i class="material-icons right">autorenew</i></button>
+			</form>
+			</div>
+</body>
+</html>

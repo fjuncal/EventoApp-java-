@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlsn:th = "http://thymeleaf.org"
+	  xmlns:layout = "http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Alterar Senha</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	      <!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	
+	      <!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="style/styleCss.css"/>
+</head>
+<body>
+	<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Alterar Senha do Usuário Cadastrado</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+</header>
+				<div class="container formCadastro">
+					<form method="post" action="senhaAtualizada">
+						<p>Email: <input type="text" name="email" placeholder="e-mail"/></p>
+						<p>Senha: <input type="password" name="senha" placeholder="nova senha"/></p>
+						<button class="btn waves-effect waves-light" type="submit" name="action">Alterar Senha
+		    <i class="material-icons right">autorenew</i></button>
+		    		</form>
+				</div>
+</body>
+</html>

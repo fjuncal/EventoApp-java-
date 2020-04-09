@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html  xmlsn:th = "http://thymeleaf.org"
+	  xmlns:layout = "http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	      <!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	
+	      <!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="style/styleCss.css"/>
+</head>
+<body>
+	<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Cadastre o usuario</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+
+</header>
+			<th:block th:include = "mensagemValidacao"></th:block>
+			<div class="container formCadastro">
+				<form method="post" action="cadastro">
+					<p>Nome: <input type="text" name="nome"  placeholder="nome"/></p>
+					<p>Email: <input type="text" name="email" placeholder="e-mail"/></p>
+					<p>País: <input type="text" name="pais" placeholder="país"/></p>
+					<p>Cidade: <input type="text" name="cidade" placeholder="cidade"/></p>
+					<p>Senha: <input type="password" name="senha" placeholder="senha"/></p>
+					  <button class="btn waves-effect waves-light" type="submit" name="action">Cadastrar<i class="material-icons right">person</i></button>
+				</form>
+				</div>
+			
+			
+</body>
+</html>
